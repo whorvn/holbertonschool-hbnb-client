@@ -1,0 +1,352 @@
+/*
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff9800;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+header .login a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header .login a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.places {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.place-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 10px;
+}
+
+.place-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.place-card p {
+    margin: 5px 0;
+}
+
+.place-card button {
+    background-color: #ff9800;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.place-card button:hover {
+    background-color: #e68900;
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+/* 
+  This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
+  You'll probably need to override some of theese styles.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+
+
+
+/*index  css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff9800;
+    padding: 10px;
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo {
+    height: 50px; /* Adjust the size as needed */
+    /* You can add other styling properties as needed */
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#filter {
+    padding: 20px;
+}
+
+#places-list {
+    padding: 20px;
+    /* Add additional styles for the places list */
+}
+
+
+
+
+
+
+
+/* main */
+
+
+main {
+    min-height:  90vh;
+}
+
+
+
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #ff9800;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+
+
+
+
+/* login */
+
+
+
+
+
+#login-form {
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff9800;
+}
+
+
+
+
+
+
+
+/*  place */
+
+#places-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Individual place styling */
+  .place {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: calc(33% - 40px); /* 3 items per row, with gap considered */
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .place {
+      width: calc(50% - 40px); /* 2 items per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .place {
+      width: calc(100% - 40px); /* 1 item per row */
+    }
+  }
+
+  .view-details {
+    background-color: #ff9800;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .view-details:hover {
+    background-color: #ff9800;
+  }
+  
+  /* Button focus effect */
+  .view-details:focus {
+    outline: 2px solid #ff9800;
+    outline-offset: 2px;
+  }
+
+
+.mb{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
